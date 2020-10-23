@@ -6,7 +6,7 @@
         <li appStrikethrough>{{ goal.name }}  Due on {{goal.completeDate|date|uppercase}}</li>
         <button (click)='toggleDetails(i)'>Toggle Details</button>
         
-        <app-goaldetail *ngIf='goal.showDescription' [goal] ='goal' (isComplete) = 'completeGoal($event, i)'></app-goaldetail>
+        <app-goaldetail *ngIf='goal.showDescription' [goal] ='goal' (isComplete) = 'deleteGoal($event, i)'></app-goaldetail>
        
         </div>
     </ul>
