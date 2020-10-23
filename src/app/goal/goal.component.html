@@ -19,6 +19,9 @@
         </div>
         </div>
         </div>
+        <div class="col-md-6">
+            <app-goal-fom (addGoal)="addNewGoal($event)"></app-goal-fom>
+        </div>
         </div>
     
     <h4 *ngIf='goals.length > 5'>You have too many goals</h4>
